@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Helvetica", sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  background-color: black;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+a:link {
+  color: seashell;
+  text-decoration: underline;
+}
+
+a:visited {
+    color: beige;
+}
+
+#logo > img {
+  height: 50px;
+}
+
+.top {
+  background-image: url(images/img-mission-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.headers {
+  width: 100%;
+  background-color: black;
+  padding: 10px 0;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.tea-container {
+    display: flex;
+    flex-direction: column; /* Headers are stacked vertically */
+    text-align: center; /* Center the headers */
+    margin: 65px auto
+}
+
+.img-container {
+    display: flex; /* Use flexbox for images */
+    flex-direction: row; /* Align images in a row */
+    justify-content: space-around; /* Space evenly across the row */
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    flex-wrap: wrap; /* Allow wrapping if there are too many images */
+    max-width: 1000px; /* Max width of the image container */
+    margin: auto; /* Center the image container */
+}
+
+.img-item {
+    margin: 10px; /* Space around each image item */
+    text-align: center; /* Center text under images */
+}
+
+.img-item img {
+    width: 300px; /* Keep the max height for images */
+}
+
+.location {
+  background-image: url(images/img-locations-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  max-width: 1200px;
+  margin: auto;
+  
+}
+
+.locations-header {
+    margin-bottom: 15px;
+}
+
+.locations-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    opacity: 1 !important;
+    gap: 40px;
+    text-align: center;
+}
+
+.loc-1, 
+.loc-2,
+.loc-3 {
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+}
+
+footer {
+    text-align: left;
+    padding: 10px;
+    margin-left: 20px;
+}
