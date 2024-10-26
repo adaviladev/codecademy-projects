@@ -51,14 +51,21 @@ header .content {
 
 header .logo {
   flex: 1;
+
+  color: #4A4A4A;
+  font-size: 1.5rem;
+  font-family: 'Roboto Mono';
+  font-weight: 400;
 }
 
 header nav ul {
   display: flex;
+
 }
 
 nav li {
   padding-left: 3.5rem;
+  
 }
 
 nav a {
@@ -117,6 +124,10 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+
+  background-image: url('../images/banner-landingpage.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 #sign-up-cta {
@@ -124,6 +135,8 @@ header .mobile {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
+  margin-top: 170px;
+  margin-left: 100px;
 }
 
 #sign-up-cta .content {
@@ -194,8 +207,14 @@ header .mobile {
 }
 
 @media only screen and (max-width: 450px) {
+
   #sign-up-section {
     height: 20rem;
+  }
+
+  #sign-up-cta .center {
+    display: flex;
+    text-align: center;
   }
 
   #sign-up-cta h1 {
@@ -227,6 +246,11 @@ header .mobile {
   width: 90%;
   height: 65%;
   margin: 0 auto;
+}
+
+.image-container img {
+  max-width: 100%;
+  margin-bottom: 40px;
 }
 
 .feature h2 {
@@ -296,6 +320,7 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: flex;
 }
 
 @media only screen and (max-width: 760px) {
@@ -338,17 +363,24 @@ header .mobile {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
+
 }
 
 #quotes-section quote-citation {
   height: 1.875rem;
+  
+}
+
+#quotes-section > .content {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 @media only screen and (max-width: 760px) {
